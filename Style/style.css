@@ -87,7 +87,8 @@ th {
     
     padding: 1em;
     margin: 1em;
-    align-content: space-between;
+    display: flex;
+    align-content: flex-end;
     justify-content: space-evenly;
     text-decoration: none;
     padding: 10px;
@@ -98,3 +99,8 @@ th {
     cursor: pointer;
 }
 
+.ul-footer{
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+}
