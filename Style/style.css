@@ -7,6 +7,7 @@ body {
     
 }
 
+/* -------------------HEADER-------------------- */
 
 .header {
     font-family: 'Dancing Script', cursive;
@@ -21,6 +22,11 @@ body {
     
 }
 
+/* -------------------HEADER-------------------- */
+
+
+/* ------------------NAV--------------- */
+
 
 .nav {
     background-color: #638c80;
@@ -31,9 +37,8 @@ body {
     justify-content: space-evenly;
     border-radius: 5px;
 
-    
+    box-shadow: 0 0.1rem 0.3rem black;
 }
-
 
 
 .nav-link {
@@ -61,17 +66,64 @@ body {
 }
 
 
+/* ------------------NAV--------------- */
+
+/* ------------------------SECTION------------------------- */
+
+
+
+
+
 section {
     background-color: beige;
-    margin: 1em;
+    margin: auto;
     padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: small;
+
+    box-shadow: 0 0.1rem 0.4rem black;
+    border-radius: 1em;
+
+    
+    justify-content: center;
+}
+
+.formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+    
+    justify-content: space-between;
+    
+}
+
+.campos {
+    
+    justify-content: space-between;
+    margin: 1px;
+    padding: 3px;
+    border-radius: 0.3em;
+}
+
+.enviar {
+    justify-content: space-between;
+    margin-left: 1em;
+    width: 6em;
+    padding: 3px;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    transition: all 0.5s ease;
+    background-color: rgba(184, 207, 53, 0.514);
 }
 
 
-footer{
 
 
-    }
+/* ----------------------FOOTER-------------------- */
 
 
 table {
@@ -79,10 +131,12 @@ table {
     border-collapse: collapse;
 }
 
+
 th, td{
     border: solid 1px;
     padding: 3px;
 }
+
 
 th {
     background-color: #638c80;
@@ -114,6 +168,7 @@ th {
     
 }
 
+
 .links:hover{
     padding: 1.1em;
     margin: 1.1em;
@@ -122,6 +177,7 @@ th {
     background-color: rgb(13, 82, 17);
     box-shadow: 0 0.1rem 0.4rem black;
 }
+
 
 .ul-footer{
     display: flex;
