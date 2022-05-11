@@ -1,6 +1,7 @@
-* {box-sizing: border-box;
+* { 
+    box-sizing: border-box;
     padding:  0px;
-    margin: px;
+    margin: 0px;
     
     }
 
@@ -10,14 +11,12 @@ body {
     background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
     background-size: 100vw 100vh;
     background-attachment: fixed;
-    
-    
-    margin: 10px 0px 10px;
+    margin: 0%;
 
 
 
-    
 }
+
 
 /* -------------------HEADER-------------------- */
 
@@ -32,6 +31,7 @@ body {
     align-content: center;
     text-align: center;
     
+    
 }
 
 /* -------------------HEADER-------------------- */
@@ -43,7 +43,8 @@ body {
 .nav {
 
     background-color: #638c80;
-    font-size: 15px;
+    
+    
 
     margin: 1em;
     padding: 0.25em;
@@ -59,7 +60,7 @@ body {
     flex: 1;
     min-width: 250px;
     
-
+    
     
     
 }
@@ -254,4 +255,20 @@ th {
     form{
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 767px) {
+
+    body {
+    
+    background-image: url(/Desde-la-Raiz/Imagenes/fondo.jpg);
+
+    }
+}
+
+/* ----------------------Slider-------------------- */
+
+.listas{
+    justify-content: center;
+    align-content: center;
 }
