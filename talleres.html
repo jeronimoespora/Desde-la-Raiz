@@ -11,8 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width"/>
-    
+
+    <script src="Style/prueba.css"></script>
     <title>Desde La Raíz</title>
+
+    
 </head>
 
 
@@ -21,9 +24,6 @@
     <header class="header">
 
         
-        
-
-        <h3>Talleres</h3>
 
     </header>
 
@@ -32,31 +32,37 @@
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="https://www.instagram.com/stories/highlights/17854312091128482/" target="_blank" rel="noopener noreferrer">Lista de precios</a>
         <a class="nav-link" href="articulos.html">Articulos</a>
-        <a class="nav-link" href="talleres.html">Talleres</a>
+        <a class="nav-link" href="formulario.html">Talleres</a>
     </nav>
+
 
 
 
 
 <section>
     
-
-    <form action="" class="formulario">
-    
+    <div class="container">
+        <form action="" class="formulario" id="form">
         
-        <input class="campos" id="nombre" name="nombre" placeholder="Nombre..." type="text">
+            <div class="input-control">
+                <label for="username">Nombre</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            <br>
+            <br>
+            <div>
+            <textarea class="campos" id="consulta" name="consulta" id="consulta" cols="20" rows="10" placeholder="Tenes alguna duda que no contestamos aquí? Por favor escribe tu consulta a continuación y nos comunicaremos a la brevedad..."></textarea>
+            
+            </div>
+            <input class="enviar" type="submit" value="Enviar" id="submit" >
         
-        
-        <input class="campos" id="e-mail" name="e-mail" placeholder="Correo electronico..." type="email">
-        <br>
-        <br>
-        <label for="consulta"></label>
-        <textarea class="campos" id="consulta" name="consulta" id="consulta" cols="20" rows="10" placeholder="Tenes alguna duda que no contestamos aquí? Por favor escribe tu consulta a continuación y nos comunicaremos a la brevedad..."></textarea>
-        
-        <input class="enviar" type="submit" >
-    
-    </form>
-
+        </form>
+    </div>
 </section>
 
 
