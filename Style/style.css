@@ -3,24 +3,58 @@
 
 
 * { 
-    box-sizing: border-box;
-    padding:  0px;
-    margin: 0px;
     
+    box-sizing: border-box;
+    
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     }
 
 
 body {
-
-    background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
-    background-size: 100vw 100vh;
+    background-image: url(/Desde-la-Raiz/Imagenes/jungla1.jpg);
+    /* background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%); */
+    
+    /* background-size: 100vw 100vh; */
+    background-position: ;
     background-attachment: fixed;
-    margin: 0%;
-
-
+    
+    
+    
+    margin: 0 auto;
+    align-items: center;
 
 }
 
+.logo{
+    width: 65%;
+    margin: 0vh auto 0 auto;
+    padding: 1px;
+    background-color: #638c80;
+    border-radius: 4px;
+    display: flex;
+    align-content: center;
+    min-width: 80%;
+}
+
+.logo2{
+
+    max-width: 25%;
+    margin: 0vh auto 0 auto;
+    padding: 1px;
+    background-color: #638c80;
+    border-radius: 4px;
+    display: flex;
+    align-content: center;
+    
+}
+
+
+.contenedor{
+    width: 100%;
+   
+    overflow: hidden;
+}
 
 /* -------------------HEADER-------------------- */
 
@@ -46,10 +80,8 @@ body {
 
 .nav {
 
-    background-color: #638c80;
-    
-    
-
+   /*  background-image: radial-gradient(circle at 19.68% 44.65%, #181917 0, #131612 16.67%, #0d130c 33.33%, #041005 50%, #000c00 66.67%, #000800 83.33%, #000400 100%);
+     */
     margin: 1em;
     padding: 0.25em;
     
@@ -57,13 +89,12 @@ body {
     justify-content: space-evenly;
     border-radius: 5px;
 
-    box-shadow: 0 0.1rem 0.3rem black;
+    
 
     display: flex;
     flex-wrap: wrap;
     flex: 1;
-    min-width: 250px;
-    
+    width: 100%;
     
     
     
@@ -79,8 +110,8 @@ body {
     
     text-decoration: none;
     
-    background-color: beige;
-    color: black;
+    background-color: rgba(12, 22, 15, 0.719);
+    color: beige;
     border-radius: 20px 5px 20px 5px;
     
     cursor: pointer;
@@ -93,8 +124,8 @@ body {
     color: white;
     border-radius: 5px 20px 5px 20px;
     transition: all 0.5s ease;
-    background-color: #638c80;
-    box-shadow: 0 0.1rem 0.4rem black;
+    background-color: rgb(13, 82, 17);
+    box-shadow: 0 0.3rem 0.4rem rgb(1, 15, 3);
 }
 
 
@@ -105,51 +136,45 @@ body {
 
 
 
-
 section {
 
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    min-width: 250px;
-    background-color: beige;
-    margin: 1em;
+  
+    min-width: 85%;
+    background-color: rgba(12, 22, 15, 0.63);
+    
     padding: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: small;
+    width: auto;
+    margin: 0 auto;
 
     box-shadow: 0 0.1rem 0.4rem black;
     border-radius: 1em;
-    align-content: center;
+    max-width: 65%;
+    
 
-    
-    
-}
-/* ---------------------- formulario ----------------------- */
-
-/* .formulario {
-    width: 450px;
-    margin: auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    
-    font-family: Arial, Helvetica, sans-serif;
-    
 }
 
-.campos {
-    border-radius: 0.3em;
+section article{
+    background-color: rgba(12, 22, 15, 0.445);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
 }
 
 
-.enviar {
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 0.3em;
-    cursor: pointer;
-    font-weight: bold;
-} */
+
+
+section article h2, section article p{
+    margin: 1rem;
+
+}
+h2{
+    color: white;
+}
+p{
+    color: beige;
+    text-align: justify;
+    
+}
 
 .enviar:hover {
     transition: all 0.5s ease;
@@ -180,24 +205,6 @@ textarea{
 /* ----------------------FOOTER-------------------- */
 
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-
-th, td{
-    border: solid 1px;
-    padding: 3px;
-}
-
-
-th {
-    background-color: #638c80;
-    color: white;
-    border-radius: 5px;
-    
-}
 
 
 .links{
@@ -209,7 +216,7 @@ th {
     justify-content: space-evenly;
     text-decoration: none;
     padding: 10px;
-    background-color: beige;
+    background-color: rgba(24, 46, 31, 0.925);
     color: black;
     border-radius: 20px 5px 20px 5px;
     
@@ -225,7 +232,7 @@ th {
 
 .links:hover{
     
-    padding: 1%;
+    padding: 7%;
     border-radius: 5px 20px 5px 20px;
     transition: all 0.5s ease;
     background-color: rgb(13, 82, 17);
@@ -237,19 +244,27 @@ th {
     
 }
 
-
-.ul-footer{
+footer{
     display: flex;
-    align-content: flex-end;
     justify-content: center;
-    
+    align-items: flex-end;
+}
 
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    min-width: 250px;
+ul{
+    padding: 0%;
     
 }
+.ul-footer{
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: flex-end;
+    
+    
+}
+
+
 
 @media (max-width: 480px) {
     form{
@@ -257,11 +272,12 @@ th {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 700px) {
 
     body {
     
-    background-image: url(/Desde-la-Raiz/Imagenes/fondo.jpg);
+    background-image: url(/Desde-la-Raiz/Imagenes/selva3.jpg);
+    background-size:150%;
 
     }
 }
@@ -279,36 +295,56 @@ th {
 
 #form {
     width: 300px;
-    margin: 20vh auto 0 auto;
-    padding: 20px;
-    background-color: whitesmoke;
+    margin: 40 auto 0 auto;
+    padding: 1em;
+    background-color: rgba(12, 22, 15, 0.719);
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 85%;
+    box-shadow: 0 0.1rem 0.4rem black;
+    color: beige;
 }
 
 #form h1 {
-    color: #0f2027;
+    color: beige;
     text-align: center;
 }
 
 #form button {
-    padding: 10px;
+    padding: 7%;
     margin-top: 10px;
     width: 100%;
-    color: white;
-    background-color: rgb(41, 57, 194);
+    color: black;
+    background-color: beige;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    border-radius: 5px 20px 5px 20px;
+    box-shadow: 0 0.1rem 0.4rem black;
+    font-size: 130%;
+    font-weight: bold
+}
+#form button:hover{
+    
+    padding: 7%;
+    border-radius: 20px 5px 20px 5px;
+    transition: all 0.5s ease;
+    background-color: rgb(13, 82, 17);
+    box-shadow: 0 0.1rem 0.4rem black;
+    color: beige;
+    font-size: 130%;
+    font-weight: bold;
 }
 
+#username, #email, #consulta{
+    background-color: beige;
+}
 .input-control {
     display: flex;
     flex-direction: column;
 }
 
 .input-control input {
-    border: 2px solid #f0f0f0;
+    border: 2px solid rgba(185, 185, 185, 0.815);
 	border-radius: 4px;
 	display: block;
 	font-size: 12px;
@@ -332,4 +368,13 @@ th {
     color: #ff3860;
     font-size: 9px;
     height: 13px;
+}
+
+.articulo{
+    width: auto;
+    margin: 0 auto;
+}
+
+.invi{
+    text-align: center;
 }

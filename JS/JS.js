@@ -38,15 +38,15 @@ const validateInputs = () => {
     
 
     if(usernameValue === '') {
-        setError(username, 'Username is required');
+        setError(username, 'Se requiere un nombre');
     } else {
         setSuccess(username);
     }
 
     if(emailValue === '') {
-        setError(email, 'Email is required');
+        setError(email, 'Se requiere un email');
     } else if (!isValidEmail(emailValue)) {
-        setError(email, 'Provide a valid email address');
+        setError(email, 'Por favor, ingrese un email válido');
     } else {
         setSuccess(email);
     }
