@@ -13,17 +13,8 @@
 
 body {
     background-image: url(/Desde-la-Raiz/Imagenes/jungla1.jpg);
-    /* background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%); */
-    
-    /* background-size: 100vw 100vh; */
-    background-position: ;
-    background-attachment: fixed;
-    
-    
-    
+    width: 100%;
     margin: 0 auto;
-    align-items: center;
-
 }
 
 .logo{
@@ -52,7 +43,6 @@ body {
 
 .contenedor{
     width: 100%;
-   
     overflow: hidden;
 }
 
@@ -68,8 +58,6 @@ body {
 
     align-content: center;
     text-align: center;
-    
-    
 }
 
 /* -------------------HEADER-------------------- */
@@ -80,23 +68,16 @@ body {
 
 .nav {
 
-   /*  background-image: radial-gradient(circle at 19.68% 44.65%, #181917 0, #131612 16.67%, #0d130c 33.33%, #041005 50%, #000c00 66.67%, #000800 83.33%, #000400 100%);
-     */
     margin: 1em;
     padding: 0.25em;
     
-    
     justify-content: space-evenly;
     border-radius: 5px;
-
-    
 
     display: flex;
     flex-wrap: wrap;
     flex: 1;
     width: 100%;
-    
-    
     
 }
 
@@ -138,20 +119,24 @@ body {
 
 section {
 
-  
-    min-width: 85%;
+    /* min-width: 85%; */
     background-color: rgba(12, 22, 15, 0.63);
     
     padding: 1em;
     width: auto;
     margin: 0 auto;
 
-    box-shadow: 0 0.1rem 0.4rem black;
     border-radius: 1em;
     max-width: 65%;
     
 
 }
+
+section:hover{
+    box-shadow: 0 0.1rem 0.4rem black;
+    border-radius: 1em;
+}
+
 
 section article{
     background-color: rgba(12, 22, 15, 0.445);
@@ -228,6 +213,25 @@ textarea{
     border-width: 0.1em;
 
 }
+.links2{
+    
+    margin: 1em;
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    
+    padding: 11px;
+    background-color: rgba(24, 46, 31, 0.925);
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    color: beige;
+    cursor: pointer;
+    
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.486);
+    
+    border-width: 0.1em;
+}
 
 
 .links:hover{
@@ -239,9 +243,7 @@ textarea{
     box-shadow: 0 0.1rem 0.4rem black;
 
     align-content: center;
-    
-    
-    
+
 }
 
 footer{
@@ -250,9 +252,10 @@ footer{
     align-items: flex-end;
 }
 
-ul{
+ul, li {
     padding: 0%;
-    
+    margin: 0;
+    list-style: none;
 }
 .ul-footer{
     display: flex;
@@ -260,8 +263,6 @@ ul{
     justify-content: center;
     
     align-items: flex-end;
-    
-    
 }
 
 
@@ -276,17 +277,9 @@ ul{
 
     body {
     
-    background-image: url(/Desde-la-Raiz/Imagenes/selva3.jpg);
+    background-image: url(/Imagenes/selva3.jpg);
     background-size:150%;
-
     }
-}
-
-/* ----------------------Slider-------------------- */
-
-.listas{
-    justify-content: center;
-    align-content: center;
 }
 
 
@@ -376,5 +369,8 @@ ul{
 }
 
 .invi{
+
     text-align: center;
+    font-size: 1.1rem;
 }
+
