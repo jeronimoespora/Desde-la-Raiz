@@ -125,3 +125,30 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+
+
+
+/* Boton de finalizar compra */
+
+const btnFinalizarCompra = document.querySelector('.btn-finalizar-compra');
+
+btnFinalizarCompra.addEventListener('click', () => {
+    // Verificar si hay productos en el carrito
+    if (allProducts.length > 0) {
+        // Mostrar información del carrito en la consola
+        console.log('Información del carrito:', allProducts);
+
+        // Mostrar una ventana emergente de confirmación
+        const confirmar = window.confirm('¿Estás seguro de finalizar la compra?');
+
+        if (confirmar) {
+            // El usuario ha confirmado, redirigir a la página del formulario
+            window.location.href = 'formulario.html'; // Cambia 'formulario.html' por la URL de tu página de formulario
+        } else {
+            // El usuario ha cancelado, no hacer nada
+        }
+    } else {
+        // Mostrar un mensaje si el carrito está vacío
+        alert('Tu carrito está vacío. Agrega productos antes de finalizar la compra.');
+    }
+});
